@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff6767;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 0, 0, 0.73);
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(36, 36, 36);
+}
+
+h1 {
+  color: #ff6767;
+  text-align: center;
+  margin-top: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 92, 92);
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin: 10px 0;
+  justify-content: space-between;
+  color: white;
+  border-bottom: 0.1px solid rgb(74, 74, 74);
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contestName {
+  font-size: 0.9rem;
+}
+
+.contestTime {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
+  padding: 0 10px;
+  font-weight: 100;
+  border-left: 1px solid rgb(255, 92, 92);
+}
+
+.label{
+    display: none;
+}
+
+.timeValue{
+    display: flex;
+    flex-direction: column;
+}
+
+.timeHead,
+.boxHeading {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  font-weight: 100;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.footer a {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    flex-direction: column;
+  }
+  .headerBox {
+    display: none;
+  }
+  .label {
+    display: inline-block;
+  }
+  .contestTime{
+    margin: 10px 0;
+  }
+}
