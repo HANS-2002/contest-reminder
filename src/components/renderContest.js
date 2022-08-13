@@ -41,7 +41,7 @@ function RenderContest(props) {
                             Time to Start:
                         </div>
                         <div className='timeValue'>
-                            <p>{fixTime(new Date(countDown).getDate() * 24 + new Date(countDown).getHours())} : {fixTime(new Date(countDown).getMinutes())} : {fixTime(new Date(countDown).getSeconds())}</p>
+                            <p>{fixTime((new Date(countDown).getDate() - 1) * 24 + new Date(countDown).getHours())} : {fixTime(new Date(countDown).getMinutes())} : {fixTime(new Date(countDown).getSeconds())}</p>
                         </div>
                     </div>
                 </div>
