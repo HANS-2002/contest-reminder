@@ -14,7 +14,8 @@ function App() {
         res.data.forEach(contest => {
           if (contest.url.match("codechef") ||
             contest.url.match("codeforces") ||
-            contest.url.match("leetcode")) {
+            contest.url.match("leetcode") ||
+            contest.url.match("google")) {
             contest.key = i;
             i++;
             setContests(prevContests => [...prevContests, contest]);

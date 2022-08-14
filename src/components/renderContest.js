@@ -24,7 +24,7 @@ function RenderContest(props) {
                         </div>
                         <div className='timeValue'>
                             <p>{fixTime(new Date(props.start).getHours())} : {fixTime(new Date(props.start).getMinutes())}</p>
-                            <p>{fixTime(new Date(props.start).getDate())} - {fixTime(new Date(props.start).getMonth())} - {new Date(props.start).getFullYear()}</p>
+                            <p>{fixTime(new Date(props.start).getDate())} - {fixTime(new Date(props.start).getMonth() + 1)} - {new Date(props.start).getFullYear()}</p>
                         </div>
                     </div>
                     <div className='contestTime'>
@@ -33,7 +33,7 @@ function RenderContest(props) {
                         </div>
                         <div className='timeValue'>
                             <p>{fixTime(new Date(props.end).getHours())} : {fixTime(new Date(props.end).getMinutes())}</p>
-                            <p>{fixTime(new Date(props.end).getDate())} - {fixTime(new Date(props.end).getMonth())} - {new Date(props.end).getFullYear()}</p>
+                            <p>{fixTime(new Date(props.end).getDate())} - {fixTime(new Date(props.end).getMonth() + 1)} - {new Date(props.end).getFullYear()}</p>
                         </div>
                     </div>
                     <div className='contestTime'>
