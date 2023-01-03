@@ -1,4 +1,4 @@
-# Contest - Reminder
+# Contest Watcher
 A webapp to keep track of your contests.
 
 Supported contest sites -> Codechef, Codeforces, Leetcode and Google
